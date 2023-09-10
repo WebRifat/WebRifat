@@ -1,0 +1,84 @@
+/* *COMMON CSS STARTS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    text-align: center;
+    
+    
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    
+    padding: 15px 0;
+}
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    z-index: 1;
+    padding: 18px 23px;
+    position: relative;
+    font-family: arial;
+    
+   
+   
+   
+    
+}
+nav ul li a::before{
+    content: '';
+    width:0%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.35;
+    -webkit-transition: 0.5;
+    -moz-transition: 0.35;
+    -ms-transition: 0.35;
+    -o-transition: 0.35;
+}
+nav ul li:hover a::before{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: -1;
+}
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height: 100%;
+    bottom:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5;
+    -webkit-transition: 0.5;
+    -moz-transition: 0.5;
+    -ms-transition: 0.5;
+    -o-transition: 0.5;
+}
+nav ul li:hover a::after{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: -1;
+}
+/* *COMMON CSS ENDS */
